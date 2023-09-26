@@ -274,8 +274,8 @@ int main() {
         }
         else if (choice == 6) {
     int roll_number;
-    std::cout << "Enter the roll number of the student: ";
-    std::cin >> roll_number;
+    cout << "Enter the roll number of the student: ";
+    cin >> roll_number;
 
     dll.delete_student(roll_number);
 }
