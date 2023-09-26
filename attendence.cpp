@@ -243,14 +243,14 @@ int main() {
             cin >> roll_number;
 
             dll.add_student(name, roll_number);
-            cout << "\nStudent added successfully!" << std::endl;
+            cout << "\nStudent added successfully!" << endl;
         } else if (choice == 2) {
             string subject;
             cout << "\nEnter the subject for which you want to take attendance: ";
             cin >> subject;
 
             dll.take_attendance(subject);
-            cout << "\nAttendance taken successfully!" << std::endl;
+            cout << "\nAttendance taken successfully!" << endl;
         } else if (choice == 3) {
             int roll_number;
             cout << "\nEnter the roll number of the student: ";
