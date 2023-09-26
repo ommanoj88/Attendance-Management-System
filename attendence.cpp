@@ -44,14 +44,14 @@ public:
 
     void take_attendance(string subject) {
         Node* current_node = this->head;
-        std::string date;
-        std::cout << "Enter the date for which you want to take attendance (dd-mm-yyyy): ";
-        std::cin >> date;
+        string date;
+        cout << "Enter the date for which you want to take attendance (dd-mm-yyyy): ";
+        cin >> date;
 
         while (current_node != nullptr) {
-            std::string attendance_status;
-            std::cout << "Is " << current_node->name << " present in " << subject << "? (Y/N)";
-            std::cin >> attendance_status;
+            string attendance_status;
+            cout << "Is " << current_node->name << " present in " << subject << "? (Y/N)";
+            cin >> attendance_status;
 
             if (attendance_status == "Y" || attendance_status == "y") {
                 current_node->attendance[subject][date] = true;
